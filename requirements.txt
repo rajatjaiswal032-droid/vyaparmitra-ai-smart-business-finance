@@ -1,0 +1,12 @@
+streamlit
+pandas
+plotly
+fpdf2
+scikit-learn
+bcrypt
+python-dotenv
+google-genai
+pillow
+openpyxl
+qrcode[pil]
+gTTS

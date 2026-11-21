@@ -1,0 +1,26 @@
+# Project Rules: Smart Business Finance System
+
+1. Tech Stack (100% Free & Open Source):
+   - UI: Streamlit
+   - Database: SQLite3 (`finance.db`)
+   - Data & Forecasting: Pandas, Scikit-Learn
+   - Charts: Plotly
+   - PDF Generation: FPDF2
+   - Security: bcrypt (password hashing) + python-dotenv
+   - AI & Vision: `google-genai` SDK using `gemini-2.5-flash`
+
+2. Security & Environment Rules:
+   - Always load `GEMINI_API_KEY` from `.env` using `os.getenv("GEMINI_API_KEY")`. Never hardcode API keys.
+   - Hash all passwords using `bcrypt` before storing in SQLite.
+   - Strictly filter all database queries by `user_id` (`WHERE user_id = ?`).
+
+3. Authentication & Demo Flow:
+   - Track login via `st.session_state["authenticated"]` and `st.session_state["user_id"]`.
+   - Provide standard Login/Signup PLUS a "1-Click Demo Store Login" button that creates/loads a demo Kirana store pre-seeded with 6 months of realistic Indian Rupee (INR) sales and expense transactions.
+
+4. Core Functional Modules:
+   - Module 1 (AI Receipt Scanner): Upload receipt image -> Gemini Vision extracts `vendor`, `date`, `amount`, and `category` in JSON -> saves to expenses table.
+   - Module 2 (GST Invoice Generator): Customer & item details -> If Seller State == Customer State, split GST equally into CGST + SGST; if different, apply IGST -> generate downloadable PDF via FPDF2 and log income.
+   - Module 3 (Cash Flow Forecasting): Monthly Income vs Expense Plotly charts + predict next month balance + show a Red Shortage Alert if projected balance falls below INR 10,000.
+   - Module 4 (Loan & Safe EMI Checker): Calculate monthly EMI, total interest, and compare EMI against average monthly net profit (Green <= 30%, Yellow 30-50%, Red > 50%).
+   - Module 5 (Hinglish AI Business Copilot): Read the logged-in user's live financial summary from SQLite and answer business questions in simple Hindi/Hinglish.

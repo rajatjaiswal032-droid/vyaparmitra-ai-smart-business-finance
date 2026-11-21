@@ -1,0 +1,346 @@
+date,type,category,description,amount
+2026-04-01,Income,Retail Grocery,Daily Counter & UPI Sales,7738.33
+2026-04-01,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4376.62
+2026-04-02,Income,Retail Grocery,Daily Counter & UPI Sales,11009.34
+2026-04-03,Income,Retail Grocery,Daily Counter & UPI Sales,5224.36
+2026-04-03,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7379.88
+2026-04-04,Income,Retail Grocery,Daily Counter & UPI Sales,8156.89
+2026-04-05,Income,Retail Grocery,Daily Counter & UPI Sales,5079.99
+2026-04-05,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7158.0
+2026-04-06,Income,Retail Grocery,Daily Counter & UPI Sales,4874.96
+2026-04-07,Income,Retail Grocery,Daily Counter & UPI Sales,8836.46
+2026-04-07,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3744.87
+2026-04-08,Income,Retail Grocery,Daily Counter & UPI Sales,5407.13
+2026-04-09,Income,Retail Grocery,Daily Counter & UPI Sales,8745.19
+2026-04-09,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9649.45
+2026-04-10,Income,Retail Grocery,Daily Counter & UPI Sales,5738.02
+2026-04-11,Income,Retail Grocery,Daily Counter & UPI Sales,6732.39
+2026-04-11,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8093.98
+2026-04-12,Income,Retail Grocery,Daily Counter & UPI Sales,13977.09
+2026-04-13,Income,Retail Grocery,Daily Counter & UPI Sales,10271.03
+2026-04-13,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6294.11
+2026-04-14,Income,Retail Grocery,Daily Counter & UPI Sales,14262.55
+2026-04-15,Income,Retail Grocery,Daily Counter & UPI Sales,4965.83
+2026-04-15,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9896.05
+2026-04-16,Income,Retail Grocery,Daily Counter & UPI Sales,7396.09
+2026-04-17,Income,Retail Grocery,Daily Counter & UPI Sales,5942.55
+2026-04-17,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4118.78
+2026-04-18,Income,Retail Grocery,Daily Counter & UPI Sales,7584.82
+2026-04-19,Income,Retail Grocery,Daily Counter & UPI Sales,12661.26
+2026-04-19,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4609.67
+2026-04-20,Income,Retail Grocery,Daily Counter & UPI Sales,10316.0
+2026-04-21,Income,Retail Grocery,Daily Counter & UPI Sales,10889.13
+2026-04-21,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6104.7
+2026-04-22,Income,Retail Grocery,Daily Counter & UPI Sales,9977.44
+2026-04-23,Income,Retail Grocery,Daily Counter & UPI Sales,5127.89
+2026-04-23,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3664.89
+2026-04-24,Income,Retail Grocery,Daily Counter & UPI Sales,6559.59
+2026-04-25,Income,Retail Grocery,Daily Counter & UPI Sales,11304.0
+2026-04-25,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6535.22
+2026-04-26,Income,Retail Grocery,Daily Counter & UPI Sales,7641.47
+2026-04-27,Income,Retail Grocery,Daily Counter & UPI Sales,10355.62
+2026-04-27,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6734.84
+2026-04-28,Income,Retail Grocery,Daily Counter & UPI Sales,7497.67
+2026-04-29,Income,Retail Grocery,Daily Counter & UPI Sales,12443.79
+2026-04-29,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8652.16
+2026-04-30,Income,Retail Grocery,Daily Counter & UPI Sales,6940.97
+2026-05-01,Income,Retail Grocery,Daily Counter & UPI Sales,10244.24
+2026-05-01,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7296.53
+2026-05-02,Income,Retail Grocery,Daily Counter & UPI Sales,13251.37
+2026-05-03,Income,Retail Grocery,Daily Counter & UPI Sales,11794.45
+2026-05-03,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5445.91
+2026-05-04,Income,Retail Grocery,Daily Counter & UPI Sales,14301.75
+2026-05-05,Income,Retail Grocery,Daily Counter & UPI Sales,5680.66
+2026-05-05,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6461.36
+2026-05-06,Income,Retail Grocery,Daily Counter & UPI Sales,12071.41
+2026-05-07,Income,Retail Grocery,Daily Counter & UPI Sales,6019.85
+2026-05-07,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7013.91
+2026-05-08,Income,Retail Grocery,Daily Counter & UPI Sales,4892.07
+2026-05-09,Income,Retail Grocery,Daily Counter & UPI Sales,11182.16
+2026-05-09,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9163.65
+2026-05-10,Income,Retail Grocery,Daily Counter & UPI Sales,10230.26
+2026-05-11,Income,Retail Grocery,Daily Counter & UPI Sales,13254.78
+2026-05-11,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5647.23
+2026-05-12,Income,Retail Grocery,Daily Counter & UPI Sales,11452.95
+2026-05-13,Income,Retail Grocery,Daily Counter & UPI Sales,10443.7
+2026-05-13,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7723.18
+2026-05-14,Income,Retail Grocery,Daily Counter & UPI Sales,9062.05
+2026-05-15,Income,Retail Grocery,Daily Counter & UPI Sales,12899.68
+2026-05-15,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10568.51
+2026-05-16,Income,Retail Grocery,Daily Counter & UPI Sales,9240.98
+2026-05-17,Income,Retail Grocery,Daily Counter & UPI Sales,11141.52
+2026-05-17,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3673.22
+2026-05-18,Income,Retail Grocery,Daily Counter & UPI Sales,11514.92
+2026-05-19,Income,Retail Grocery,Daily Counter & UPI Sales,10971.29
+2026-05-19,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10946.15
+2026-05-20,Income,Retail Grocery,Daily Counter & UPI Sales,12719.25
+2026-05-21,Income,Retail Grocery,Daily Counter & UPI Sales,7345.96
+2026-05-21,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6209.17
+2026-05-22,Income,Retail Grocery,Daily Counter & UPI Sales,11186.53
+2026-05-23,Income,Retail Grocery,Daily Counter & UPI Sales,4725.63
+2026-05-23,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6801.22
+2026-05-24,Income,Retail Grocery,Daily Counter & UPI Sales,6180.48
+2026-05-25,Income,Retail Grocery,Daily Counter & UPI Sales,5670.96
+2026-05-25,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3659.84
+2026-05-26,Income,Retail Grocery,Daily Counter & UPI Sales,12182.33
+2026-05-27,Income,Retail Grocery,Daily Counter & UPI Sales,5793.4
+2026-05-27,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5131.4
+2026-05-28,Income,Retail Grocery,Daily Counter & UPI Sales,8409.5
+2026-05-29,Income,Retail Grocery,Daily Counter & UPI Sales,13214.22
+2026-05-29,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3828.53
+2026-05-30,Income,Retail Grocery,Daily Counter & UPI Sales,8991.87
+2026-05-31,Income,Retail Grocery,Daily Counter & UPI Sales,9994.4
+2026-05-31,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10090.39
+2026-06-01,Income,Retail Grocery,Daily Counter & UPI Sales,12692.8
+2026-06-02,Income,Retail Grocery,Daily Counter & UPI Sales,13139.84
+2026-06-02,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5371.68
+2026-06-03,Income,Retail Grocery,Daily Counter & UPI Sales,8652.97
+2026-06-04,Income,Retail Grocery,Daily Counter & UPI Sales,8087.71
+2026-06-04,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10096.7
+2026-06-05,Income,Retail Grocery,Daily Counter & UPI Sales,14077.31
+2026-06-06,Income,Retail Grocery,Daily Counter & UPI Sales,6009.21
+2026-06-06,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4574.5
+2026-06-07,Income,Retail Grocery,Daily Counter & UPI Sales,6819.57
+2026-06-08,Income,Retail Grocery,Daily Counter & UPI Sales,6833.36
+2026-06-08,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6982.71
+2026-06-09,Income,Retail Grocery,Daily Counter & UPI Sales,10391.24
+2026-06-10,Income,Retail Grocery,Daily Counter & UPI Sales,7127.47
+2026-06-10,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3231.93
+2026-06-11,Income,Retail Grocery,Daily Counter & UPI Sales,8689.47
+2026-06-12,Income,Retail Grocery,Daily Counter & UPI Sales,8192.54
+2026-06-12,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7617.46
+2026-06-13,Income,Retail Grocery,Daily Counter & UPI Sales,14030.98
+2026-06-14,Income,Retail Grocery,Daily Counter & UPI Sales,11404.94
+2026-06-14,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7220.83
+2026-06-15,Income,Retail Grocery,Daily Counter & UPI Sales,10675.93
+2026-06-16,Income,Retail Grocery,Daily Counter & UPI Sales,11262.0
+2026-06-16,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3621.14
+2026-06-17,Income,Retail Grocery,Daily Counter & UPI Sales,13495.33
+2026-06-18,Income,Retail Grocery,Daily Counter & UPI Sales,12299.69
+2026-06-18,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10021.2
+2026-06-19,Income,Retail Grocery,Daily Counter & UPI Sales,12478.73
+2026-06-20,Income,Retail Grocery,Daily Counter & UPI Sales,8423.79
+2026-06-20,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6312.03
+2026-06-21,Income,Retail Grocery,Daily Counter & UPI Sales,5535.37
+2026-06-22,Income,Retail Grocery,Daily Counter & UPI Sales,10842.9
+2026-06-22,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3685.53
+2026-06-23,Income,Retail Grocery,Daily Counter & UPI Sales,5173.48
+2026-06-24,Income,Retail Grocery,Daily Counter & UPI Sales,6587.63
+2026-06-24,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4465.96
+2026-06-25,Income,Retail Grocery,Daily Counter & UPI Sales,7900.54
+2026-06-26,Income,Retail Grocery,Daily Counter & UPI Sales,5025.76
+2026-06-26,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3201.82
+2026-06-27,Income,Retail Grocery,Daily Counter & UPI Sales,6012.65
+2026-06-28,Income,Retail Grocery,Daily Counter & UPI Sales,5514.64
+2026-06-28,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6036.16
+2026-06-29,Income,Retail Grocery,Daily Counter & UPI Sales,4755.01
+2026-06-30,Income,Retail Grocery,Daily Counter & UPI Sales,13243.32
+2026-06-30,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7989.74
+2026-07-01,Income,Retail Grocery,Daily Counter & UPI Sales,5985.5
+2026-07-02,Income,Retail Grocery,Daily Counter & UPI Sales,7022.58
+2026-07-02,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5909.64
+2026-07-03,Income,Retail Grocery,Daily Counter & UPI Sales,8141.63
+2026-07-04,Income,Retail Grocery,Daily Counter & UPI Sales,5728.42
+2026-07-04,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9821.71
+2026-07-05,Income,Retail Grocery,Daily Counter & UPI Sales,14431.03
+2026-07-06,Income,Retail Grocery,Daily Counter & UPI Sales,9159.89
+2026-07-06,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6973.91
+2026-07-07,Income,Retail Grocery,Daily Counter & UPI Sales,5358.85
+2026-07-08,Income,Retail Grocery,Daily Counter & UPI Sales,5521.88
+2026-07-08,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5872.56
+2026-07-09,Income,Retail Grocery,Daily Counter & UPI Sales,7147.57
+2026-07-10,Income,Retail Grocery,Daily Counter & UPI Sales,12788.55
+2026-07-10,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4459.22
+2026-07-11,Income,Retail Grocery,Daily Counter & UPI Sales,4730.96
+2026-07-12,Income,Retail Grocery,Daily Counter & UPI Sales,14009.86
+2026-07-12,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7320.41
+2026-07-13,Income,Retail Grocery,Daily Counter & UPI Sales,5966.03
+2026-07-14,Income,Retail Grocery,Daily Counter & UPI Sales,9931.72
+2026-07-14,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3410.93
+2026-07-15,Income,Retail Grocery,Daily Counter & UPI Sales,9781.09
+2026-07-16,Income,Retail Grocery,Daily Counter & UPI Sales,14285.01
+2026-07-16,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9933.94
+2026-07-17,Income,Retail Grocery,Daily Counter & UPI Sales,11461.97
+2026-07-18,Income,Retail Grocery,Daily Counter & UPI Sales,7111.15
+2026-07-18,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6060.26
+2026-07-19,Income,Retail Grocery,Daily Counter & UPI Sales,6170.42
+2026-07-20,Income,Retail Grocery,Daily Counter & UPI Sales,12219.38
+2026-07-20,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7354.22
+2026-07-21,Income,Retail Grocery,Daily Counter & UPI Sales,12290.55
+2026-07-22,Income,Retail Grocery,Daily Counter & UPI Sales,7796.65
+2026-07-22,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4939.73
+2026-07-23,Income,Retail Grocery,Daily Counter & UPI Sales,12615.11
+2026-07-24,Income,Retail Grocery,Daily Counter & UPI Sales,14349.26
+2026-07-24,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9850.5
+2026-07-25,Income,Retail Grocery,Daily Counter & UPI Sales,12560.79
+2026-07-26,Income,Retail Grocery,Daily Counter & UPI Sales,12683.33
+2026-07-26,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8971.01
+2026-07-27,Income,Retail Grocery,Daily Counter & UPI Sales,6767.39
+2026-07-28,Income,Retail Grocery,Daily Counter & UPI Sales,9676.39
+2026-07-28,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5973.39
+2026-07-29,Income,Retail Grocery,Daily Counter & UPI Sales,4789.8
+2026-07-30,Income,Retail Grocery,Daily Counter & UPI Sales,4779.37
+2026-07-30,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5379.46
+2026-07-31,Income,Retail Grocery,Daily Counter & UPI Sales,7091.74
+2026-08-01,Income,Retail Grocery,Daily Counter & UPI Sales,11425.22
+2026-08-01,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10660.82
+2026-08-02,Income,Retail Grocery,Daily Counter & UPI Sales,8972.28
+2026-08-03,Income,Retail Grocery,Daily Counter & UPI Sales,13870.21
+2026-08-03,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10906.7
+2026-08-04,Income,Retail Grocery,Daily Counter & UPI Sales,14050.01
+2026-08-05,Income,Retail Grocery,Daily Counter & UPI Sales,8146.36
+2026-08-05,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4919.61
+2026-08-06,Income,Retail Grocery,Daily Counter & UPI Sales,6768.46
+2026-08-07,Income,Retail Grocery,Daily Counter & UPI Sales,6467.06
+2026-08-07,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4794.11
+2026-08-08,Income,Retail Grocery,Daily Counter & UPI Sales,10740.66
+2026-08-09,Income,Retail Grocery,Daily Counter & UPI Sales,13503.08
+2026-08-09,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9755.4
+2026-08-10,Income,Retail Grocery,Daily Counter & UPI Sales,9294.73
+2026-08-11,Income,Retail Grocery,Daily Counter & UPI Sales,11029.78
+2026-08-11,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9437.22
+2026-08-12,Income,Retail Grocery,Daily Counter & UPI Sales,5347.78
+2026-08-13,Income,Retail Grocery,Daily Counter & UPI Sales,11105.86
+2026-08-13,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10296.26
+2026-08-14,Income,Retail Grocery,Daily Counter & UPI Sales,12323.03
+2026-08-15,Income,Retail Grocery,Daily Counter & UPI Sales,12001.4
+2026-08-15,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6928.66
+2026-08-16,Income,Retail Grocery,Daily Counter & UPI Sales,6285.22
+2026-08-17,Income,Retail Grocery,Daily Counter & UPI Sales,12391.35
+2026-08-17,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5793.63
+2026-08-18,Income,Retail Grocery,Daily Counter & UPI Sales,12508.24
+2026-08-19,Income,Retail Grocery,Daily Counter & UPI Sales,14216.57
+2026-08-19,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6287.54
+2026-08-20,Income,Retail Grocery,Daily Counter & UPI Sales,8513.87
+2026-08-21,Income,Retail Grocery,Daily Counter & UPI Sales,13967.97
+2026-08-21,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8853.43
+2026-08-22,Income,Retail Grocery,Daily Counter & UPI Sales,6200.04
+2026-08-23,Income,Retail Grocery,Daily Counter & UPI Sales,5770.38
+2026-08-23,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4378.98
+2026-08-24,Income,Retail Grocery,Daily Counter & UPI Sales,13548.52
+2026-08-25,Income,Retail Grocery,Daily Counter & UPI Sales,12565.02
+2026-08-25,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4340.16
+2026-08-26,Income,Retail Grocery,Daily Counter & UPI Sales,12765.1
+2026-08-27,Income,Retail Grocery,Daily Counter & UPI Sales,14303.06
+2026-08-27,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8326.69
+2026-08-28,Income,Retail Grocery,Daily Counter & UPI Sales,8004.08
+2026-08-29,Income,Retail Grocery,Daily Counter & UPI Sales,9986.6
+2026-08-29,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4221.67
+2026-08-30,Income,Retail Grocery,Daily Counter & UPI Sales,4642.43
+2026-08-31,Income,Retail Grocery,Daily Counter & UPI Sales,14208.9
+2026-08-31,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8267.46
+2026-09-01,Income,Retail Grocery,Daily Counter & UPI Sales,9765.81
+2026-09-02,Income,Retail Grocery,Daily Counter & UPI Sales,13836.25
+2026-09-02,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6583.71
+2026-09-03,Income,Retail Grocery,Daily Counter & UPI Sales,13217.43
+2026-09-04,Income,Retail Grocery,Daily Counter & UPI Sales,12761.55
+2026-09-04,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4846.13
+2026-09-05,Income,Retail Grocery,Daily Counter & UPI Sales,7018.35
+2026-09-06,Income,Retail Grocery,Daily Counter & UPI Sales,7429.67
+2026-09-06,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5076.21
+2026-09-07,Income,Retail Grocery,Daily Counter & UPI Sales,10364.37
+2026-09-08,Income,Retail Grocery,Daily Counter & UPI Sales,7093.65
+2026-09-08,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6468.3
+2026-09-09,Income,Retail Grocery,Daily Counter & UPI Sales,5810.74
+2026-09-10,Income,Retail Grocery,Daily Counter & UPI Sales,13600.17
+2026-09-10,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5959.52
+2026-09-11,Income,Retail Grocery,Daily Counter & UPI Sales,9081.61
+2026-09-12,Income,Retail Grocery,Daily Counter & UPI Sales,10333.49
+2026-09-12,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10253.51
+2026-09-13,Income,Retail Grocery,Daily Counter & UPI Sales,8706.28
+2026-09-14,Income,Retail Grocery,Daily Counter & UPI Sales,13677.21
+2026-09-14,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7112.86
+2026-09-15,Income,Retail Grocery,Daily Counter & UPI Sales,9818.25
+2026-09-16,Income,Retail Grocery,Daily Counter & UPI Sales,9735.07
+2026-09-16,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3345.9
+2026-09-17,Income,Retail Grocery,Daily Counter & UPI Sales,8901.25
+2026-09-18,Income,Retail Grocery,Daily Counter & UPI Sales,6331.08
+2026-09-18,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3230.67
+2026-09-19,Income,Retail Grocery,Daily Counter & UPI Sales,12491.7
+2026-09-20,Income,Retail Grocery,Daily Counter & UPI Sales,6223.47
+2026-09-20,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6893.24
+2026-09-21,Income,Retail Grocery,Daily Counter & UPI Sales,11751.93
+2026-09-22,Income,Retail Grocery,Daily Counter & UPI Sales,10064.76
+2026-09-22,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5742.66
+2026-09-23,Income,Retail Grocery,Daily Counter & UPI Sales,9683.49
+2026-09-24,Income,Retail Grocery,Daily Counter & UPI Sales,10054.42
+2026-09-24,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9317.33
+2026-09-25,Income,Retail Grocery,Daily Counter & UPI Sales,5561.09
+2026-09-26,Income,Retail Grocery,Daily Counter & UPI Sales,10102.96
+2026-09-26,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5138.26
+2026-09-27,Income,Retail Grocery,Daily Counter & UPI Sales,7269.17
+2026-09-28,Income,Retail Grocery,Daily Counter & UPI Sales,12222.61
+2026-09-28,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7160.17
+2026-09-29,Income,Retail Grocery,Daily Counter & UPI Sales,10117.29
+2026-09-30,Income,Retail Grocery,Daily Counter & UPI Sales,12099.93
+2026-09-30,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10317.41
+2026-10-01,Income,Retail Grocery,Daily Counter & UPI Sales,12058.85
+2026-10-02,Income,Retail Grocery,Daily Counter & UPI Sales,14344.13
+2026-10-02,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7143.31
+2026-10-03,Income,Retail Grocery,Daily Counter & UPI Sales,12989.18
+2026-10-04,Income,Retail Grocery,Daily Counter & UPI Sales,15426.87
+2026-10-04,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6728.3
+2026-10-05,Income,Retail Grocery,Daily Counter & UPI Sales,13274.35
+2026-10-06,Income,Retail Grocery,Daily Counter & UPI Sales,12528.49
+2026-10-06,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10543.71
+2026-10-07,Income,Retail Grocery,Daily Counter & UPI Sales,15514.44
+2026-10-08,Income,Retail Grocery,Daily Counter & UPI Sales,17908.23
+2026-10-08,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10549.01
+2026-10-09,Income,Retail Grocery,Daily Counter & UPI Sales,9579.5
+2026-10-10,Income,Retail Grocery,Daily Counter & UPI Sales,13628.44
+2026-10-10,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10557.48
+2026-10-11,Income,Retail Grocery,Daily Counter & UPI Sales,17415.0
+2026-10-12,Income,Retail Grocery,Daily Counter & UPI Sales,7926.31
+2026-10-12,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4148.65
+2026-10-13,Income,Retail Grocery,Daily Counter & UPI Sales,12043.59
+2026-10-14,Income,Retail Grocery,Daily Counter & UPI Sales,7054.37
+2026-10-14,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5076.98
+2026-10-15,Income,Retail Grocery,Daily Counter & UPI Sales,7062.13
+2026-10-16,Income,Retail Grocery,Daily Counter & UPI Sales,15112.87
+2026-10-16,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9314.7
+2026-10-17,Income,Retail Grocery,Daily Counter & UPI Sales,18184.86
+2026-10-18,Income,Retail Grocery,Daily Counter & UPI Sales,8160.03
+2026-10-18,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8785.74
+2026-10-19,Income,Retail Grocery,Daily Counter & UPI Sales,14988.46
+2026-10-20,Income,Retail Grocery,Daily Counter & UPI Sales,8005.22
+2026-10-20,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10086.1
+2026-10-21,Income,Retail Grocery,Daily Counter & UPI Sales,19136.85
+2026-10-22,Income,Retail Grocery,Daily Counter & UPI Sales,9039.44
+2026-10-22,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10629.53
+2026-10-23,Income,Retail Grocery,Daily Counter & UPI Sales,11451.47
+2026-10-24,Income,Retail Grocery,Daily Counter & UPI Sales,12653.02
+2026-10-24,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10921.0
+2026-10-25,Income,Retail Grocery,Daily Counter & UPI Sales,17313.0
+2026-10-26,Income,Retail Grocery,Daily Counter & UPI Sales,8254.79
+2026-10-26,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,6565.87
+2026-10-27,Income,Retail Grocery,Daily Counter & UPI Sales,13035.67
+2026-10-28,Income,Retail Grocery,Daily Counter & UPI Sales,10653.07
+2026-10-28,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4726.81
+2026-10-29,Income,Retail Grocery,Daily Counter & UPI Sales,10375.1
+2026-10-30,Income,Retail Grocery,Daily Counter & UPI Sales,15824.04
+2026-10-30,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3351.97
+2026-10-31,Income,Retail Grocery,Daily Counter & UPI Sales,13554.68
+2026-11-01,Income,Retail Grocery,Daily Counter & UPI Sales,12021.18
+2026-11-01,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,3341.04
+2026-11-02,Income,Retail Grocery,Daily Counter & UPI Sales,10550.22
+2026-11-03,Income,Retail Grocery,Daily Counter & UPI Sales,14498.02
+2026-11-03,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,7195.65
+2026-11-04,Income,Retail Grocery,Daily Counter & UPI Sales,6942.93
+2026-11-05,Income,Retail Grocery,Daily Counter & UPI Sales,19373.62
+2026-11-05,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,9349.23
+2026-11-06,Income,Retail Grocery,Daily Counter & UPI Sales,19192.9
+2026-11-07,Income,Retail Grocery,Daily Counter & UPI Sales,7489.52
+2026-11-07,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5271.4
+2026-11-08,Income,Retail Grocery,Daily Counter & UPI Sales,6609.44
+2026-11-09,Income,Retail Grocery,Daily Counter & UPI Sales,16591.47
+2026-11-09,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,5309.48
+2026-11-10,Income,Retail Grocery,Daily Counter & UPI Sales,7824.0
+2026-11-11,Income,Retail Grocery,Daily Counter & UPI Sales,11775.43
+2026-11-11,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,10309.03
+2026-11-12,Income,Retail Grocery,Daily Counter & UPI Sales,17131.22
+2026-11-13,Income,Retail Grocery,Daily Counter & UPI Sales,9566.22
+2026-11-13,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,4365.07
+2026-11-14,Income,Retail Grocery,Daily Counter & UPI Sales,18483.82
+2026-11-15,Income,Retail Grocery,Daily Counter & UPI Sales,13778.03
+2026-11-15,Expense,Wholesale Stock,ITC/HUL/Amul Distributor Bill,8663.26
+2026-11-16,Income,Retail Grocery,Daily Counter & UPI Sales,7282.74
