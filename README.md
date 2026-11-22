@@ -4,7 +4,7 @@
 
 **Your Smart AI Business Partner for Everyday Business Finance**
 
-An AI-powered financial management platform for Indian MSMEs, Kirana stores, and small retailers.
+AI-assisted financial operations for Indian MSMEs, Kirana stores, and local small businesses.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -12,7 +12,7 @@ An AI-powered financial management platform for Indian MSMEs, Kirana stores, and
 [![AI](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?logo=googlegemini&logoColor=white)](https://ai.google.dev/)
 [![Hackathon](https://img.shields.io/badge/Arthaton-2026-orange)](https://youtu.be/UNpI-8kASYM)
 
-[Watch the Demo](https://youtu.be/UNpI-8kASYM) · [View Source Code](https://github.com/rajatjaiswal032-droid/vyaparmitra-ai-smart-business-finance)
+[View Demo](https://youtu.be/UNpI-8kASYM) · [View Repository](https://github.com/rajatjaiswal032-droid/vyaparmitra-ai-smart-business-finance)
 
 </div>
 
@@ -20,44 +20,46 @@ An AI-powered financial management platform for Indian MSMEs, Kirana stores, and
 
 ## Project Demo
 
-[![VyaparMitra AI demo](https://img.youtube.com/vi/UNpI-8kASYM/hqdefault.jpg)](https://youtu.be/UNpI-8kASYM)
+The following demo video shows the working VyaparMitra AI application and its main business workflows.
 
-**YouTube:** https://youtu.be/UNpI-8kASYM
+[![VyaparMitra AI Project Demo](https://img.youtube.com/vi/UNpI-8kASYM/hqdefault.jpg)](https://youtu.be/UNpI-8kASYM)
+
+**Demo video:** https://youtu.be/UNpI-8kASYM
 
 ---
 
 ## Project Overview
 
-VyaparMitra AI is a Python and Streamlit application for small Indian businesses. It brings commonly disconnected tasks into a single workspace: transaction tracking, cash-flow forecasting, inventory management, 2-way Khata, Galla reconciliation, GST invoicing, loan planning, receipt scanning, and Hinglish AI assistance.
+VyaparMitra AI is a local Python and Streamlit application for small Indian businesses. It brings transaction tracking, financial summaries, monthly forecasting, Galla reconciliation, inventory monitoring, GST invoice preparation, EMI planning, customer/supplier Khata, UPI QR generation, and a Hinglish AI Copilot into one interface.
 
-It is designed for Kirana store owners, small retailers, and local shopkeepers who need a practical view of:
+The project is intended for Kirana stores and small retailers that need a clearer view of:
 
 - Daily income and expenses
-- Future cash balance
-- Stock and expiry risks
+- Cash and UPI balances
+- Projected cash position
 - Customer receivables
 - Supplier payables
-- GST and UPI payment workflows
-- Loan affordability
+- Low-stock and near-expiry products
+- GST invoice details
+- Practical loan planning
 
 ## Problem Statement
 
-Small businesses often manage records across notebooks, spreadsheets, payment apps, and GST paperwork. This can make it difficult to:
+Small businesses commonly maintain records across notebooks, payment apps, spreadsheets, and separate GST or inventory tools. This fragmentation makes it difficult to:
 
-- Calculate current revenue and expenses consistently
-- Estimate upcoming cash requirements
-- Find the highest-cost expense categories
-- Track which customers owe money
-- Track supplier payments that are still due
-- Detect low-stock and near-expiry items
-- Produce invoices and account for tax splits
-- Interpret financial information without specialist software
+- Reconcile daily cash and UPI collections
+- Know which customers owe money
+- Know which suppliers still need payment
+- Identify stock shortages or near-expiry items
+- Review revenue, expenses, and net profit
+- Prepare estimated future cash-flow projections
+- Use financial records for timely business decisions
 
 ## Our Solution
 
-VyaparMitra AI centralizes these workflows behind a Streamlit dashboard backed by a local SQLite database. Existing modules calculate summaries and forecasts, store user-specific records, generate PDFs and QR images, and prepare live business metrics for a Gemini-powered Copilot.
+VyaparMitra AI combines related operational and financial workflows in a Streamlit interface backed by local SQLite storage. Python modules calculate summaries, forecasts, EMI values, GST totals, Khata balances, and prepared business context. Gemini receives that prepared context for AI-generated explanations and does not access SQLite directly.
 
-The application also includes Python fallback responses so its core Khata, forecasting, profit, expense, stock, and loan guidance remains usable if Gemini is unavailable.
+The application also includes question-aware Python fallback responses for Copilot use when Gemini is unavailable or a valid API key is not configured.
 
 ---
 
@@ -69,143 +71,130 @@ The application also includes Python fallback responses so its core Khata, forec
 - Total Expenses
 - Net Profit or Loss
 - Next-month projected balance
-- Plotly grouped income, expense, and net-profit charts
-- Top expense category breakdown
-- Searchable recent transactions
-- Monthly profit-goal progress
+- Plotly income/expense and net-profit charts
+- Expense category breakdown
+- Profit-goal progress
+- Searchable recent transaction table
 - Manual income and expense entry
 
 ### Cash-Flow Forecasting
 
-The forecasting module in `forecasting.py`:
+`forecasting.py`:
 
-1. Converts transaction dates to monthly `YYYY-MM` periods.
+1. Converts transaction dates into `YYYY-MM` months.
 2. Aggregates monthly income and expenses.
 3. Calculates monthly net profit/loss and a running closing balance.
-4. Uses Scikit-learn `LinearRegression` for the next month when at least two months exist.
-5. Uses the latest month's values as a fallback for datasets with fewer than two months.
+4. Uses Scikit-learn `LinearRegression` when at least two months are available.
+5. Falls back to the latest month's income and expense values when fewer than two months exist.
 
-Predictions are estimates based on the available records, not guaranteed outcomes.
+Forecast values are estimates based on available records, not guaranteed outcomes.
 
 ### Daily Galla Closing
 
-The Financial Overview screen includes a daily galla reconciliation expander:
+The Financial Overview includes a `Daily Galla Closing (Raat Ka Hisaab)` expander for:
 
 - Opening cash
 - Actual cash in galla
 - Actual UPI received
-- System cash sales derived from today's stored transactions
-- Cash expenses derived from today's stored transactions
-- Matched, short, or excess cash status
-- Saved notes and reconciliation values
+- Stored system cash sales
+- Stored cash expenses
+- Cash short/excess or matched status
+- Saving reconciliation notes
 
-The saved record is stored in the `daily_closings` SQLite table.
+Values are persisted in the `daily_closings` table.
 
 ### CSV and Excel Import/Export
 
-The Financial Overview includes transaction download and upload workflows:
-
-- Export transactions as CSV
-- Export transactions as Excel
-- Import CSV or Excel bank/store statements using `date`, `type`, `category`, `description`, and `amount`
-- Detect meal-plan columns (`meal_name`, `quantity_prepared`, `quantity_consumed`) and convert them into income and expense records
+- Download transactions as CSV
+- Download transactions as Excel
+- Upload CSV or Excel statement files
+- Accept standard fields: `date`, `type`, `category`, `description`, `amount`
+- Detect meal-plan fields: `meal_name`, `quantity_prepared`, `quantity_consumed`
+- Convert meal-plan quantities into separate income and expense transaction rows
 
 ### Inventory and Stock
 
 - Add and restock inventory items
-- Store unit, stock quantity, minimum stock, selling price, and GST rate
-- Store an optional expiry date
-- Show low-stock warnings
-- Show items expiring within 30 days
-- Deduct quantities when GST invoice items are sold
-- Restock quantities from receipt and restock workflows
+- Store unit, stock quantity, minimum stock, selling price, GST rate, and expiry date
+- Show low-stock and within-30-days expiry warnings
+- Deduct stock quantities when GST invoice items are sold
+- Restock quantities from AI receipt actions
 
 ### AI Receipt Scanner
 
-The scanner supports:
+- JPG and PNG upload
+- Streamlit camera input
+- Generated sample Kirana bill for demonstrations
+- Editable vendor, date, invoice number, amount, GST amount, category, and line items
+- Duplicate-bill warning by vendor, amount, and date
+- Save as expense
+- Save expense and restock inventory
 
-- JPG or PNG uploads
-- `st.camera_input` camera capture
-- A generated sample Kirana bill for demonstrations
-- Editable vendor, date, invoice number, amount, GST amount, category, and item fields
-- Duplicate-bill warnings based on vendor, amount, and date
-- Save to expenses
-- Save expense plus restock inventory
-
-Gemini receipt extraction is implemented with structured JSON prompts. If no key or a provider/model call fails, the app reports an offline verification state rather than presenting a confirmed scan.
+Receipt extraction attempts Gemini and returns an explicit offline/manual verification state when the API key or provider call is unavailable.
 
 ### GST Invoice Generator
 
-- Dynamic customer and seller state inputs
+- Customer and seller state inputs
 - Dynamic item rows
 - GST rates of 0%, 5%, 12%, 18%, and 28%
-- CGST + SGST for same-state transactions
-- IGST for different-state transactions
-- FPDF GST invoice download
-- GST summary CSV for the current month
-- Monthly invoice totals for taxable sales and CGST, SGST, and IGST
-- QR and invoice payment PDF workflows
+- CGST plus SGST for same-state supply
+- IGST for inter-state supply
+- FPDF GST tax invoice
+- Monthly GST summary CSV
+- Configurable UPI payment QR settings
 
-Tax outputs are application calculations and should be reviewed against the applicable tax treatment.
+The invoice is an application calculation tool and not a substitute for professional tax filing advice.
 
 ### UPI Payment QR
 
-The GST and Udhaar sections generate UPI payment QR images from a configurable Store UPI ID and payee name.
+The GST and pending Udhaar workflows generate UPI QR PNG images using a configured Store UPI ID and payee name.
 
-The implementation creates an encoded `upi://pay` URI with:
+The generated URI includes `pa`, `pn`, `am`, `cu=INR`, and `tn` parameters. PDF helpers can embed the generated PNG in the invoice or pending payment slip.
 
-- `pa`
-- `pn`
-- `am`
-- `cu=INR`
-- `tn`
-
-The GST invoice and Pending Udhaar PDF helpers can embed generated QR PNG images. The UPI setup shown by the application must be verified by the store owner before real use.
+The QR payer and recipient values must be verified by the store owner before real use.
 
 ### Loan and EMI Planner
 
-The loan calculator:
-
-- Calculates the monthly EMI using a reducing-balance formula
-- Returns total payment and total interest
-- Calculates EMI as a percentage of average monthly profit
-- Classifies the result as Safe, Moderate, or High Risk
-- Displays a practical Hinglish/English recommendation
+- Reducing-balance monthly EMI calculation
+- Total interest
+- Total repayment
+- EMI-to-average-profit percentage
+- Safe, Moderate, or High Risk classification
+- Hinglish/English recommendation
 
 The result is a planning estimate, not a bank approval or credit rating.
 
 ### Two-Way Udhaar / Credit Khata
-
-The Khata module supports:
 
 - `Customer - Lena Hai` receivables
 - `Supplier - Dena Hai` payables
 - Cash or UPI payment mode
 - Pending/Paid status
 - Partial payments
-- Automatic remaining-balance updates
-- Income or expense transaction logging for recovered or paid amounts
-- WhatsApp reminder previews
-- Pending Bill + QR PDF downloads
+- Remaining-balance updates
+- Income transaction for customer recovery
+- Expense transaction for supplier payment
+- Pre-filled WhatsApp reminder links
+- Pending Bill plus QR PDF
 
-WhatsApp buttons open a pre-filled WhatsApp link. They do not send messages automatically.
+WhatsApp buttons prepare links for user action. They do not send messages automatically.
 
 ### Hinglish AI Copilot
 
-The Copilot receives live values prepared by `app.py`, including:
+The Copilot receives prepared live values for:
 
 - Total income
 - Total expense
 - Net profit
 - Top expense category
-- Forecasted balance
+- Predicted balance
 - Pending Udhaar
 - Low-stock items
-- Customer receivables
-- Supplier payables
-- Near-expiry items
+- Customer receivable count and total
+- Supplier payable count and total
+- Items expiring within 30 days
 
-The user can enter text or use the Streamlit audio input workflow. Gemini is used for generated answers and transcription when available. Question-aware Python fallbacks provide live store calculations if the API key is missing or Gemini calls fail.
+It supports text chat and Streamlit voice input. Gemini answers are used where available. Question-aware local fallback logic returns store-specific calculations if the API key or provider call is unavailable.
 
 ---
 
@@ -214,20 +203,22 @@ The user can enter text or use the Streamlit audio input workflow. Gemini is use
 | Area | Technology |
 |---|---|
 | Interface | Streamlit |
-| Language | Python |
+| Programming language | Python |
 | Database | SQLite |
 | Authentication | bcrypt password hashing |
-| Data processing | Pandas |
+| Tabular processing | Pandas |
 | Charts | Plotly |
 | Forecasting | scikit-learn `LinearRegression` |
 | AI SDK | Google Gen AI SDK (`google-genai`) |
-| AI/vision models | Configured model fallback: `gemini-2.5-flash`, `gemini-2.0-flash`, `gemini-flash-latest` |
+| Configured Copilot/receipt model fallback | `gemini-2.5-flash`, `gemini-2.0-flash`, `gemini-flash-latest` |
 | Environment variables | python-dotenv |
-| PDF generation | FPDF2 (`fpdf.FPDF`) |
-| Image handling | Pillow |
-| QR generation | qrcode with Pillow |
-| Excel support | openpyxl |
+| PDF | FPDF2 / `fpdf.FPDF` |
+| Images | Pillow |
+| QR codes | qrcode |
+| Excel | openpyxl |
 | Text-to-speech | gTTS |
+
+Model availability depends on the API account and provider; the configured fallback order does not guarantee all models are available.
 
 ---
 
@@ -235,52 +226,59 @@ The user can enter text or use the Streamlit audio input workflow. Gemini is use
 
 ```mermaid
 flowchart LR
-    User[Business Owner] --> UI[Streamlit App]
-    UI --> Auth[Login and Registration]
-    UI --> Overview[Financial Overview]
-    UI --> Scanner[Receipt Scanner]
-    UI --> GST[GST Invoice Module]
-    UI --> Loan[Loan Calculator]
-    UI --> Khata[Two-Way Khata]
-    UI --> Inventory[Inventory]
-    UI --> Copilot[Hinglish Copilot]
+    Owner[Business Owner] --> UI[Streamlit Interface]
+    UI --> Auth[Authentication]
+    UI --> Dashboard[Financial Dashboard]
+    UI --> Galla[Daily Galla Closing]
+    UI --> Forecast[Cash Flow Forecasting]
+    UI --> Receipt[AI Receipt Scanner]
+    UI --> Inventory[Inventory Module]
+    UI --> GST[GST Invoice Generator]
+    UI --> Loan[Loan Planner]
+    UI --> Khata[Two-Way Udhaar]
+    UI --> Copilot[Hinglish AI Copilot]
 
     Auth --> DB[(SQLite finance.db)]
-    Overview --> DB
-    Scanner --> DB
+    Dashboard --> DB
+    Galla --> DB
+    Receipt --> DB
+    Inventory --> DB
     GST --> DB
     Loan --> DB
     Khata --> DB
-    Inventory --> DB
 
-    Overview --> Forecast[Monthly Linear Regression]
-    Copilot --> Summary[Live Store Metrics]
-    Summary --> DB
-    Summary --> Gemini[Google Gemini API]
+    Forecast --> ML[Scikit-learn Linear Regression]
+    ML --> Dashboard
+
+    Dashboard --> Context[Prepared Live Business Context]
+    Inventory --> Context
+    Khata --> Context
+    Galla --> Context
+    Forecast --> Context
+    Context --> Gemini[Google Gemini API]
     Gemini --> Copilot
-    Summary --> Fallback[Question-Aware Offline Logic]
+    Context --> Fallback[Python Offline Fallback]
+    Fallback --> Copilot
 
-    GST --> PDF[FPDF and UPI QR]
-    Khata --> Reminder[WhatsApp Preview and PDF]
+    GST --> PDF[FPDF PDF and UPI QR]
+    Khata --> PaymentPDF[Pending Bill PDF and UPI QR]
 ```
 
-### AI Data Boundary
-
-The application does not give Gemini direct SQLite access. `app.py` or `ai_assistant.py` gathers or receives live summary values and includes those values in a prompt. Gemini returns text or structured JSON based on the prompt.
+Gemini receives prepared Python context. It does not directly access the SQLite database.
 
 ---
 
 ## Project Workflow
 
-1. The user starts the Streamlit application.
-2. The owner logs in or registers a business account.
-3. The demo store login seeds a demonstration account and related records.
-4. The dashboard reads user-scoped transactions and calculates totals.
-5. The forecasting module creates monthly aggregations and a next-month projection.
-6. Inventory, Khata, Galla, and invoice modules read and update SQLite records.
-7. Receipt or Copilot requests call Gemini when an API key and provider are available.
-8. If Gemini fails, receipt verification or question-aware local fallback logic is used.
-9. PDFs, CSV files, Excel files, WhatsApp links, and QR images are generated for download or sharing.
+1. The owner starts Streamlit and registers or logs in.
+2. The demo-store login can seed a presentation account.
+3. Financial modules read user-scoped transaction records.
+4. Forecasting aggregates monthly income and expense values.
+5. Inventory, Khata, Galla, and invoice modules read or update SQLite records.
+6. Receipt and Copilot modules prepare relevant context.
+7. Gemini creates AI output when key and provider calls are available.
+8. Question-aware local fallback logic remains available for common business questions.
+9. PDF, QR, CSV, Excel, and WhatsApp-link outputs are created for download or sharing.
 
 ---
 
@@ -304,44 +302,41 @@ vyaparmitra-ai-smart-business-finance/
 ├── import_web_data.py
 ├── demo_test_notes.md
 ├── real_kirana_2026.csv
-└── sample_kirana_data.csv
+├── sample_kirana_data.csv
+└── docs/
+    └── screenshots/
 ```
 
-Excluded by `.gitignore`:
+The following generated or private items are excluded:
 
 - `.env`
 - `venv/`
 - `__pycache__/`
-- `*.db`
-- `*.pdf`
-- `*.png`
+- `finance.db`
+- Generated PDFs
+- Most generated PNG files
+
+Only project documentation screenshots under `docs/screenshots/*.png` are intended to be tracked.
 
 ---
 
 ## Database Architecture
 
-`database.py` initializes `finance.db` automatically when imported.
+`database.py` initializes `finance.db` when imported.
 
 | Table | Purpose |
 |---|---|
 | `users` | Username, bcrypt password hash, and business name |
-| `transactions` | User-scoped income and expense records |
-| `invoices` | Customer, seller, item JSON, GST, and total invoice values |
-| `loans` | Saved loan EMI and risk information |
-| `udhaar` | Customer and supplier credit entries, partial payments, status, and payment mode |
-| `inventory` | Stock quantity, minimum stock, selling price, GST rate, and expiry date |
-| `daily_closings` | Opening cash, system totals, actual galla/UPI, difference, and notes |
+| `transactions` | User-specific income and expense records |
+| `invoices` | Customer/seller data, item JSON, GST values, and totals |
+| `loans` | Loan and EMI calculations |
+| `udhaar` | Customer/supplier Khata records, status, type, mode, and paid amount |
+| `inventory` | Stock, minimum stock, price, GST rate, unit, and expiry date |
+| `daily_closings` | Galla and UPI closing reconciliation records |
 
-The main relationship is `user_id` foreign-key scoping for store-specific application records.
+Foreign keys link the store-specific tables to `users.id`. The migrations in `init_db()` also add missing expiry and Udhaar columns to existing local databases.
 
-Existing database tables are retained while migrations add:
-
-- `inventory.expiry_date`
-- `udhaar.entry_type`
-- `udhaar.payment_mode`
-- `udhaar.paid_amount`
-
-The database file is local and should not be committed.
+Password hashing does not replace other production security controls.
 
 ---
 
@@ -361,19 +356,14 @@ git clone https://github.com/rajatjaiswal032-droid/vyaparmitra-ai-smart-business
 cd vyaparmitra-ai-smart-business-finance
 ```
 
-### Create a Virtual Environment
+### Create and Activate a Virtual Environment
 
 ```powershell
 python -m venv venv
-```
-
-### Activate on Windows
-
-```powershell
 .\venv\Scripts\Activate.ps1
 ```
 
-If script execution is restricted:
+If PowerShell script execution is restricted:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -389,59 +379,72 @@ python -m pip install -r requirements.txt
 
 ### Initialize the Database
 
-The database is initialized automatically when `database.py` or `app.py` imports it:
-
 ```powershell
 python -c "import database"
 ```
 
-This creates `finance.db` and required tables locally.
+The database module creates or updates the local SQLite tables. `app.py` also calls database initialization at startup.
 
-### Run the Application
+### Run
 
 ```powershell
 streamlit run app.py
 ```
 
-The local URL is normally `http://localhost:8501`.
+Open the URL printed by Streamlit, normally `http://localhost:8501`.
 
 ---
 
 ## Environment Variables
 
-Create `.env` in the project root:
+Create a local `.env` file:
 
 ```dotenv
 GEMINI_API_KEY=your_api_key_here
 ```
 
-| Variable | Required for |
+| Variable | Purpose |
 |---|---|
-| `GEMINI_API_KEY` | Gemini Copilot, receipt extraction, and Gemini voice transcription |
+| `GEMINI_API_KEY` | Gemini receipt extraction, Copilot answers, and Gemini voice transcription |
 
-Do not commit `.env` or real credentials. The application loads `.env` with override enabled for AI calls.
+Do not commit `.env` or real API credentials.
 
 ---
 
 ## Screenshots and Demo
 
-The repository does not currently include a verified screenshot directory.
+The demo video is available at:
 
-### Suggested Screenshots
+**https://youtu.be/UNpI-8kASYM**
 
-| Screenshot | Place shown |
+### Screenshot Status
+
+Actual application screenshots are not currently available in `docs/screenshots/`. The README therefore lists the images needed for the final submission without claiming that they already exist.
+
+| Required screenshot | Destination |
 |---|---|
-| Login and 1-click demo login | Entry screen |
-| KPI cards and Plotly chart | Financial Overview |
-| Galla closing expander | Financial Overview |
-| Camera/uploaded bill and extracted fields | AI Receipt Scanner |
-| GST tax breakdown and UPI QR | GST Invoice Generator |
-| EMI metrics and risk badge | Loan & Safe EMI Planner |
-| Lena Hai and Dena Hai entries | Udhaar / Credit Khata |
-| Low-stock and expiry alerts | Inventory / Financial Overview |
-| Hinglish Copilot chat | AI Business Copilot |
+| Financial dashboard | `docs/screenshots/dashboard.png` |
+| AI Copilot | `docs/screenshots/ai-copilot.png` |
+| Forecast chart | `docs/screenshots/forecasting.png` |
+| Two-way Khata | `docs/screenshots/udhaar-khata.png` |
+| GST invoice and UPI QR | `docs/screenshots/gst-invoice.png` |
+| Inventory and expiry alerts | `docs/screenshots/inventory.png` |
 
-Add images to a future `screenshots/` directory and link them here.
+Screenshot placeholders:
+
+**`dashboard.png` — pending manual capture**
+
+**`ai-copilot.png` — pending manual capture**
+
+**`forecasting.png` — pending manual capture**
+
+**`udhaar-khata.png` — pending manual capture**
+
+**`gst-invoice.png` — pending manual capture**
+
+**`inventory.png` — pending manual capture**
+
+Replace the placeholder labels with real Markdown image links after the PNG files are captured and verified.
 
 ---
 
@@ -458,7 +461,7 @@ Add images to a future `screenshots/` directory and link them here.
 
 - Mere business ka total profit kitna hai?
 - Sabse zyada kharcha kahan ho raha hai?
-- Kitne logon se udhaar lena hai aur kitna pending hai?
+- Kitne logon se udhaar lena hai aur kitna payment pending hai?
 - Wholesalers ko kitna payment dena baaki hai?
 - Kaunsa stock expire hone wala hai?
 - Kya ₹2,50,000 ka loan lena safe rahega?
@@ -473,24 +476,26 @@ Add images to a future `screenshots/` directory and link them here.
 
 ## Testing and Verification
 
-There is no dedicated automated test suite in the repository. Compilation can be verified on Windows with:
+There is no dedicated automated test suite in the repository.
+
+Python compilation can be checked on Windows with:
 
 ```powershell
 .\venv\Scripts\python.exe -m py_compile app.py auth.py ai_assistant.py database.py forecasting.py gst_invoice.py loan_calculator.py
 ```
 
-Manual smoke checks:
+Performed validation should include:
 
 - Demo login creates or retrieves the demo account.
-- Transaction CRUD updates revenue, expenses, and net profit.
-- Galla values show matched, short, or excess status.
+- Transaction entries update totals.
+- Galla closing displays matched, short, or excess status.
 - CSV and Excel exports download successfully.
-- Receipt upload/camera produces editable fields or an explicit offline state.
-- GST PDF, P&L PDF, and pending Khata PDF download as valid FPDF output.
-- QR images use the configured UPI ID and store name.
-- Inventory restock/deduction updates stock quantities.
-- Partial Khata payment updates the remaining balance and creates a transaction.
-- Copilot fallback questions return store-specific values.
+- Receipt upload/camera provides editable fields or an explicit offline state.
+- GST and pending Khata PDFs generate valid output.
+- UPI QR output uses the configured payee and amount.
+- Inventory stock updates and expiry warnings appear.
+- Partial Khata payment updates remaining balances and logs a transaction.
+- Copilot fallback produces live store-specific numbers.
 
 ---
 
@@ -498,42 +503,42 @@ Manual smoke checks:
 
 - Passwords are hashed using bcrypt.
 - Application data is stored locally in SQLite.
-- The Copilot is given prepared store summaries, not direct database access.
-- `.env` must remain outside source control.
-- `.db`, `.pdf`, and generated `.png` files are ignored.
-- Demo and public presentations should use dummy customer and financial values.
-- Real UPI settings must be tested and verified with the store owner.
-- Gemini-generated output should be reviewed by the store owner.
-- Forecasts and loan risk indicators are estimates, not formal financial advice.
+- The Copilot receives prepared live business context instead of direct database access.
+- `.env` must remain private and untracked.
+- `.db`, `.pdf`, virtual environments, caches, and private generated files must remain untracked.
+- Use dummy customer and financial values in demonstrations.
+- Real UPI details and API keys should be verified and protected.
+- Receipt images and voice input may contain sensitive data.
+- Forecasts and EMI risk classifications are estimates, not formal financial advice.
 
 ---
 
 ## Known Limitations
 
-- No dedicated automated test suite is included.
-- The application is designed for local SQLite use and is not a hosted multi-device system.
-- Gemini features require an API key, network access, and provider availability.
+- The application uses local SQLite storage rather than a hosted multi-device database.
+- Gemini features require a valid key, internet access, and provider availability.
 - Receipt extraction depends on image quality and model output.
-- Voice support depends on Streamlit browser support and provider availability.
-- WhatsApp actions open pre-filled links; the app does not send messages automatically.
-- GST output is an invoice calculation helper, not filing or tax authority integration.
-- UPI QR verification and payment confirmation require real-world testing.
-- The supplied sample CSV files should be reviewed for provenance and redistribution requirements.
+- Voice support depends on browser and provider behavior.
+- WhatsApp actions open pre-filled links but do not send messages automatically.
+- GST output is an invoice calculation helper, not GST filing integration.
+- UPI payment confirmation and real recipient details require external verification.
+- No dedicated automated test suite is documented.
+- Dataset provenance and redistribution terms should be independently verified.
 
 ---
 
 ## Future Scope
 
-- Hosted authentication and database storage
-- Automated tests and CI/CD
-- Bank and POS statement reconciliation
-- More advanced forecasting models
-- Barcode and batch/lot inventory support
+- Hosted authentication and managed database storage
+- Automated testing and CI/CD
+- Bank and POS reconciliation
+- Improved forecasting models
+- Barcode and batch/lot inventory
 - GST filing integrations
 - WhatsApp Business API integration
-- Cloud backups and audit logs
-- Mobile application or deployment
-- Enhanced role-based access
+- Cloud backup and audit logs
+- Mobile or hosted deployment
+- Role-based access controls
 
 ---
 
@@ -552,7 +557,7 @@ Manual smoke checks:
 
 ## Acknowledgements
 
-Thanks to the open-source communities behind Python, Streamlit, SQLite, Pandas, Plotly, Scikit-learn, FPDF2, Pillow, Google Gen AI, and gTTS.
+Thanks to the open-source communities behind Python, Streamlit, SQLite, Pandas, Plotly, Scikit-learn, FPDF2, Pillow, Google Gen AI, openpyxl, qrcode, and gTTS.
 
 ---
 
