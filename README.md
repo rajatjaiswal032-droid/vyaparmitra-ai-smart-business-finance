@@ -435,23 +435,6 @@ Actual application screenshots are not currently available in `docs/screenshots/
 | Inventory and expiry alerts | <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/0a7a6cef-181e-460b-8613-b0a3eb26c24e" />
  |
 
-Screenshot placeholders:
-
-**`dashboard.png` — pending manual capture**
-
-**`ai-copilot.png` — pending manual capture**
-
-**`forecasting.png` — pending manual capture**
-
-**`udhaar-khata.png` — pending manual capture**
-
-**`gst-invoice.png` — pending manual capture**
-
-**`inventory.png` — pending manual capture**
-
-Replace the placeholder labels with real Markdown image links after the PNG files are captured and verified.
-
----
 
 ## Sample AI Interactions
 
