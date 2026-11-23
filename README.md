@@ -423,7 +423,8 @@ Actual application screenshots are not currently available in `docs/screenshots/
 
 | Required screenshot | Destination |
 |---|---|
-| Financial dashboard | `docs/screenshots/dashboard.png` |
+| Financial dashboard | <img width="1843" height="985" alt="Screenshot 2026-11-22 181301" src="https://github.com/user-attachments/assets/514544c2-0c72-4174-b028-bef8230afeb0" />
+ |
 | AI Copilot | `docs/screenshots/ai-copilot.png` |
 | Forecast chart | `docs/screenshots/forecasting.png` |
 | Two-way Khata | `docs/screenshots/udhaar-khata.png` |
