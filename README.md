@@ -425,11 +425,15 @@ Actual application screenshots are not currently available in `docs/screenshots/
 |---|---|
 | Financial dashboard | <img width="1843" height="985" alt="Screenshot 2026-11-22 181301" src="https://github.com/user-attachments/assets/514544c2-0c72-4174-b028-bef8230afeb0" />
  |
-| AI Copilot | `docs/screenshots/ai-copilot.png` |
-| Forecast chart | `docs/screenshots/forecasting.png` |
-| Two-way Khata | `docs/screenshots/udhaar-khata.png` |
-| GST invoice and UPI QR | `docs/screenshots/gst-invoice.png` |
-| Inventory and expiry alerts | `docs/screenshots/inventory.png` |
+| AI Copilot |<img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/a396db8f-fae7-4d30-b935-c5ae2c2db7c1" />
+ |
+
+| Two-way Khata | <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/5f66da7d-da97-4908-8263-fcfd209dcfbc" />
+ |
+| GST invoice and UPI QR |<img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/244e8c5a-5c7d-41a7-931a-ca0ad25e8da8" />
+ |
+| Inventory and expiry alerts | <img width="1763" height="991" alt="image" src="https://github.com/user-attachments/assets/0a7a6cef-181e-460b-8613-b0a3eb26c24e" />
+ |
 
 Screenshot placeholders:
 
